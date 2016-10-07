@@ -1,0 +1,198 @@
+/* ===--- GLOBAL STYLES ===--- */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', Arial, sans-serif;
+  background-color: #eee; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  margin-bottom: 1rem; }
+
+/* ===--- NAV BARS ===--- */
+.nav-top,
+.nav-bottom {
+  background: #373a3c;
+  color: #fff;
+  clear: both; }
+
+.nav-top {
+  padding: 1rem .5rem; }
+  .nav-top ul {
+    float: right;
+    text-align: right;
+    color: #fff;
+    padding-top: 3px; }
+  .nav-top li {
+    display: inline-block;
+    padding: 0 5px; }
+
+.nav-bottom {
+  padding: 2rem .5rem; }
+  .nav-bottom li {
+    padding: .3rem 0; }
+    .nav-bottom li:first-child {
+      padding-left: 0; }
+    .nav-bottom li:last-child {
+      padding-right: 0; }
+  .nav-bottom .container {
+    max-width: 800px; }
+  .nav-bottom .list-box {
+    float: left;
+    width: 25%;
+    padding-bottom: 1rem; }
+    .nav-bottom .list-box:last-child {
+      width: 50%; }
+  .nav-bottom .btn-link {
+    width: 270px; }
+
+.brand-name {
+  float: left;
+  font-size: 1.25rem; }
+
+/* ===--- GRID ===--- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: auto; }
+
+.fluid {
+  width: 100%;
+  padding: 0 15px; }
+
+.col-50 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  margin-bottom: 2rem; }
+  .col-50:first-child {
+    padding-left: 0; }
+  .col-50:last-child {
+    padding-right: 0; }
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/* ===--- UTILITIES ===--- */
+.m-b-1 {
+  margin-bottom: 1rem; }
+
+.breadcrumb {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  .breadcrumb a:hover {
+    color: #3796e8; }
+
+.banner-top {
+  background: #0275d8;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.btn {
+  height: 32px;
+  padding: .3rem .5rem;
+  border: 1px solid black;
+  border-radius: 0;
+  background: white;
+  color: black;
+  text-transform: uppercase; }
+
+.btn-primary {
+  width: 49%;
+  border: 1px solid #0275d8;
+  background: #0275d8;
+  color: #fff; }
+
+.btn-select {
+  width: 49%;
+  -webkit-appearance: none; }
+  .btn-select:focus {
+    outline: none; }
+
+.btn-link {
+  text-align: center;
+  border-radius: 10px;
+  height: auto;
+  padding: .8rem; }
+
+/* ===--- PRODUCT PAGE ===--- */
+.product-info {
+  color: #373a3c; }
+  .product-info h1 {
+    text-transform: uppercase; }
+  .product-info p {
+    color: #7f7f7f; }
+  .product-info span {
+    color: #373a3c; }
+
+.size-container {
+  margin: 0 -1% 1rem; }
+
+.size-select {
+  display: inline-block;
+  width: 30%;
+  padding: .3rem;
+  border: 1px solid black;
+  margin: 1%;
+  text-align: center;
+  background-color: white; }
+
+.add-to-cart {
+  margin-bottom: 1rem; }
+
+.product-details {
+  margin-bottom: 2rem; }
+  .product-details p {
+    margin-bottom: .5rem; }
+
+/* ===--- MEDIA QUERIES ===--- */
+@media (max-width: 640px) {
+  .col-50 {
+    width: 100%;
+    float: none;
+    padding: 0; }
+
+  .banner-top {
+    display: none; }
+
+  .img-fluid {
+    width: 100%; }
+
+  .nav-bottom .list-box {
+    width: 50%; }
+
+  .nav-bottom .list-box:last-child {
+    display: block;
+    width: 100%; } }
+@media (max-width: 450px) {
+  .brand-name {
+    display: none; }
+
+  .nav-top ul {
+    float: none;
+    text-align: center; }
+
+  .nav-bottom .list-box {
+    display: block;
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
