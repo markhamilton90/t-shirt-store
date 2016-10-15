@@ -142,6 +142,17 @@ h1, h2, h3, h4, h5, h6, p {
 	}
 }
 
+.thumbnail {
+	width: 25%;
+	display: inline-block;
+	padding: 10px;
+	vertical-align: top;
+
+	img {
+		width: 100%;
+	}
+}
+
 .banner-top {
 	background: #0275d8;
 	color: #fff;
@@ -226,6 +237,29 @@ h1, h2, h3, h4, h5, h6, p {
 	p {
 		margin-bottom: .5rem;
 	}
+}
+
+
+/* ===--- SALES PAGE ===--- */
+
+.sales-header {
+	padding: 2rem 5rem 4rem;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.product-row {
+	padding: 3rem 0;
+}
+
+.product-name {
+	height: 2em;
+}
+
+.row {
+	margin: 0 -20px;
 }
 
 
