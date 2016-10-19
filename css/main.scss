@@ -48,6 +48,11 @@ h1, h2, h3, h4, h5, h6, p {
 		text-align: right;
 		color: #fff;
 		padding-top: 3px;
+		@media (max-width: 450px) {
+			float: none;
+			text-align: center;
+		}
+
 	}
 
 	li {
@@ -77,8 +82,19 @@ h1, h2, h3, h4, h5, h6, p {
 		float: left;
 		width: 25%;
 		padding-bottom: 1rem;
+		@media (max-width: 640px) {
+			width: 50%;
+		}
+		@media (max-width: 450px) {
+			display: block;
+			width: 100%;
+		}
 		&:last-child {
 			width: 50%;
+			@media (max-width: 640px) {
+				display: block;
+				width: 100%;
+			}
 		}
 	}
 
@@ -90,12 +106,16 @@ h1, h2, h3, h4, h5, h6, p {
 .brand-name {
 	float: left;
 	font-size: 1.25rem;
+	@media (max-width: 450px) {
+		display: none;
+	}
 }
 
 
 /* ===--- GRID ===--- */
 
-.container {
+.container,
+.sales-container {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -112,6 +132,11 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 50%;
 	padding: 0 10px;
 	margin-bottom: 2rem;
+	@media (max-width: 640px) {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
 	&:first-child {
 		padding-left: 0;
 	}
@@ -124,6 +149,9 @@ h1, h2, h3, h4, h5, h6, p {
 	display: block;
 	max-width: 100%;
 	height: auto;
+	@media (max-width: 640px) {
+		width: 100%;
+	}
 }
 
 
@@ -147,6 +175,11 @@ h1, h2, h3, h4, h5, h6, p {
 	display: inline-block;
 	padding: 10px;
 	vertical-align: top;
+	@media (max-width: 790px) {
+		width: 50%;
+		padding: 5px;
+		padding-bottom: 3rem;
+	}
 
 	img {
 		width: 100%;
@@ -160,6 +193,9 @@ h1, h2, h3, h4, h5, h6, p {
 	text-align: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	@media (max-width: 640px) {
+		display: none;
+	}
 }
 
 .btn {
@@ -250,6 +286,12 @@ h1, h2, h3, h4, h5, h6, p {
 	}
 }
 
+.sales-container {
+	@media (max-width: 1020px) {
+		max-width: 760px;
+	}
+}
+
 .product-row {
 	padding: 3rem 0;
 }
@@ -260,50 +302,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .row {
 	margin: 0 -20px;
-}
-
-
-/* ===--- MEDIA QUERIES ===--- */
-
-@media (max-width: 640px) {
-	.col-50 {
-		width: 100%;
-		float: none;
-		padding: 0;
-	}
-	.banner-top {
-		display: none;
-	}
-	.img-fluid {
-		width: 100%;
-	}
-	.nav-bottom .list-box {
-		width: 50%;
-	}
-	.nav-bottom .list-box:last-child {
-		display: block;
-		width: 100%;
+	@media (max-width: 790px) {
+		margin: 0 -10px;
 	}
 }
-
-@media (max-width: 450px) {
-	.brand-name {
-		display: none;
-	}
-	.nav-top ul {
-		float: none;
-		text-align: center;
-	}
-	.nav-bottom .list-box {
-		display: block;
-		width: 100%;
-	}
-}
-
-
-
-
-
-
-
 
