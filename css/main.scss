@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 2rem .5rem;
 
 	li {
-		padding: .3rem 0;
+		display: inline-block;
+		padding: 0 10px;
 		&:first-child {
 			padding-left: 0;
 		}
@@ -83,33 +84,23 @@ h1, h2, h3, h4, h5, h6, p {
 		}
 	}
 
-	.container {
-		max-width: 800px;
+	.btn {
+		max-width: 270px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	.list-box {
-		float: left;
-		width: 25%;
-		padding-bottom: 1rem;
-		@media (max-width: 640px) {
-			width: 50%;
-		}
-		@media (max-width: 450px) {
-			display: block;
-			width: 100%;
-		}
-		&:last-child {
-			width: 50%;
-			@media (max-width: 640px) {
-				display: block;
-				width: 100%;
+	.list-group {
+		text-align: center;
+		@media (max-width: 500px) {
+			font-size: .7rem;
+
+			.btn {
+				width: 50%;
 			}
 		}
 	}
 
-	.btn-link {
-		width: 270px;
-	}
 }
 
 .brand-name {
@@ -234,7 +225,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .btn-link {
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 7px;
 	height: auto;
 	padding: .8rem;
 }

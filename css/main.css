@@ -48,32 +48,23 @@ h1, h2, h3, h4, h5, h6, p {
 .nav-bottom {
   padding: 2rem .5rem; }
   .nav-bottom li {
-    padding: .3rem 0; }
+    display: inline-block;
+    padding: 0 10px; }
     .nav-bottom li:first-child {
       padding-left: 0; }
     .nav-bottom li:last-child {
       padding-right: 0; }
-  .nav-bottom .container {
-    max-width: 800px; }
-  .nav-bottom .list-box {
-    float: left;
-    width: 25%;
-    padding-bottom: 1rem; }
-    @media (max-width: 640px) {
-      .nav-bottom .list-box {
-        width: 50%; } }
-    @media (max-width: 450px) {
-      .nav-bottom .list-box {
-        display: block;
-        width: 100%; } }
-    .nav-bottom .list-box:last-child {
-      width: 50%; }
-      @media (max-width: 640px) {
-        .nav-bottom .list-box:last-child {
-          display: block;
-          width: 100%; } }
-  .nav-bottom .btn-link {
-    width: 270px; }
+  .nav-bottom .btn {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto; }
+  .nav-bottom .list-group {
+    text-align: center; }
+    @media (max-width: 500px) {
+      .nav-bottom .list-group {
+        font-size: .7rem; }
+        .nav-bottom .list-group .btn {
+          width: 50%; } }
 
 .brand-name {
   float: left;
@@ -174,7 +165,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .btn-link {
   text-align: center;
-  border-radius: 10px;
+  border-radius: 7px;
   height: auto;
   padding: .8rem; }
 
