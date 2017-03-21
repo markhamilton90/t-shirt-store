@@ -1,0 +1,31 @@
+.btn {
+	height: 32px;
+	padding: .3rem .5rem;
+	border: 1px solid black;
+	border-radius: 0;
+	background: white;
+	color: black;
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	width: 49%;
+	border: 1px solid $color-secondary;
+	background: $color-secondary;
+	color: #fff;
+}
+
+.btn-select {
+	width: 49%;
+	-webkit-appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-link {
+	text-align: center;
+	border-radius: 7px;
+	height: auto;
+	padding: .8rem;
+}

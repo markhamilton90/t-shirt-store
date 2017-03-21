@@ -1,0 +1,30 @@
+/* ===--- SALES PAGE ===--- */
+
+.sales-header {
+	padding: 2rem 5rem 4rem;
+
+	h1 {
+		text-align: center;
+	}
+}
+
+.sales-container {
+	@media (max-width: 1020px) {
+		max-width: 760px;
+	}
+}
+
+.product-row {
+	padding: 3rem 0;
+}
+
+.product-name {
+	height: 2em;
+}
+
+.row {
+	margin: 0 -20px;
+	@media (max-width: 790px) {
+		margin: 0 -10px;
+	}
+}
